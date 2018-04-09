@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Title_Mr <= 0.5\ngini = 0.473\nsamples = 891\nvalue = [549, 342]"] ;
+1 [label="Pclass <= 2.5\ngini = 0.4\nsamples = 354\nvalue = [98, 256]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Fare_log <= 4.9\ngini = 0.094\nsamples = 182\nvalue = [9, 173]"] ;
+1 -> 2 ;
+3 [label="gini = 0.169\nsamples = 75\nvalue = [7, 68]"] ;
+2 -> 3 ;
+4 [label="gini = 0.037\nsamples = 107\nvalue = [2, 105]"] ;
+2 -> 4 ;
+5 [label="Relatives <= 3.5\ngini = 0.499\nsamples = 172\nvalue = [89, 83]"] ;
+1 -> 5 ;
+6 [label="gini = 0.47\nsamples = 127\nvalue = [48, 79]"] ;
+5 -> 6 ;
+7 [label="gini = 0.162\nsamples = 45\nvalue = [41, 4]"] ;
+5 -> 7 ;
+8 [label="Fare_log <= 4.76\ngini = 0.269\nsamples = 537\nvalue = [451, 86]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Age <= 32.115\ngini = 0.178\nsamples = 396\nvalue = [357, 39]"] ;
+8 -> 9 ;
+10 [label="gini = 0.204\nsamples = 287\nvalue = [254, 33]"] ;
+9 -> 10 ;
+11 [label="gini = 0.104\nsamples = 109\nvalue = [103, 6]"] ;
+9 -> 11 ;
+12 [label="Title_Pclass_Mr2 <= 0.5\ngini = 0.444\nsamples = 141\nvalue = [94, 47]"] ;
+8 -> 12 ;
+13 [label="gini = 0.469\nsamples = 125\nvalue = [78, 47]"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 16\nvalue = [16, 0]"] ;
+12 -> 14 ;
+}
